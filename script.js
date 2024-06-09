@@ -142,6 +142,14 @@ document.addEventListener("DOMContentLoaded", function () {
         "date": "2024-06-17"
       }
     ]
+
+    const myButton = document.querySelector(".btn");
+
+    myButton.addEventListener("click", function (event) {
+        event.preventDefault(); // Prevent the default action (form submission or page reload)
+        myButton.disabled = true; // Disable the button
+        console.log("Button clicked and disabled!");
+    });
     let result = [];
     const checkResult = () => {
 
